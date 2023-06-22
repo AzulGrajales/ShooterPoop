@@ -7,7 +7,7 @@ public class Shot : MonoBehaviour
     public Transform spawnPoint;
     public GameObject bullet;
 
-    public float shortForce = 1500f;
+    public float shotForce = 1500f;
     public float shortRate = 0.5f;
 
     // Update is called once per frame
@@ -18,6 +18,8 @@ public class Shot : MonoBehaviour
             GameObject newBullet;
 
             newBullet = Instantiate(bullet,spawnPoint.position, spawnPoint.rotation);
+
+            newBullet.GetComponent<Rigidbody>().AddForce(spawnPoint.forward * shotForce);
         }
     }
 }
