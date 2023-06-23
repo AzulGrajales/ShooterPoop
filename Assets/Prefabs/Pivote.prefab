@@ -109,6 +109,7 @@ GameObject:
   - component: {fileID: 7815735867633010996}
   - component: {fileID: 630212647240674266}
   - component: {fileID: 8370805545841860131}
+  - component: {fileID: 3218151832558768037}
   m_Layer: 0
   m_Name: Pivote
   m_TagString: Untagged
@@ -190,3 +191,15 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &3218151832558768037
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6374054843465041434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2b2354338cb87fb48ac3afc1e7e7ddd0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

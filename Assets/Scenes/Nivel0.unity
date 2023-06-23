@@ -1500,8 +1500,8 @@ GameObject:
   - component: {fileID: 665138411}
   - component: {fileID: 665138414}
   m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
+  m_Name: Enemigo
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3800,9 +3800,9 @@ GameObject:
   - component: {fileID: 1585060415}
   - component: {fileID: 1585060414}
   - component: {fileID: 1585060413}
-  - component: {fileID: 1585060418}
   - component: {fileID: 1585060419}
   - component: {fileID: 1585060420}
+  - component: {fileID: 1585060421}
   m_Layer: 0
   m_Name: Capsule
   m_TagString: Player
@@ -3904,18 +3904,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: -3.853, z: 0}
---- !u!114 &1585060418
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1585060412}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23fb0731bb32f84429cf093d181bb32d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1585060419
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3946,6 +3934,20 @@ Rigidbody:
   m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 1
+--- !u!114 &1585060421
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1585060412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e35105ff1cb647d42b09c17f76a96d9a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Salud: 100
+  SaludMax: 100
 --- !u!1 &1757879693
 GameObject:
   m_ObjectHideFlags: 0
@@ -5393,7 +5395,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7815735867633010996, guid: bcc525bb3b365724cb6a03c617aff26d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.62
       objectReference: {fileID: 0}
     - target: {fileID: 7815735867633010996, guid: bcc525bb3b365724cb6a03c617aff26d, type: 3}
       propertyPath: m_LocalPosition.z
