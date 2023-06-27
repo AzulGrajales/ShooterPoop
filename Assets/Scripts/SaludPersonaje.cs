@@ -25,7 +25,7 @@ public class SaludPersonaje : MonoBehaviour
 
         if (Salud <= 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(3);
             Destroy(gameObject);
         }
 
