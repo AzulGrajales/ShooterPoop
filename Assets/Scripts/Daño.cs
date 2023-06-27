@@ -7,7 +7,7 @@ public class Daño : MonoBehaviour
 {
     public float NumDaño;
 
-    private void OnTriggerEnter(Collider other)
+    private void OnTriggerStay(Collider other)
     {
         if (other.CompareTag("Player") && other.GetComponent<SaludPersonaje>())
         {
@@ -15,4 +15,6 @@ public class Daño : MonoBehaviour
 
         }
     }
+
+    
 }
