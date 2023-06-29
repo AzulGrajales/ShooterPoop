@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu.unity
     guid: a697a0c042a4c1f4b867d5086bf2cf97
+  - enabled: 1
+    path: Assets/Scenes/Botones.unity
+    guid: 3f23f0556fc83484880343406712304c
   m_configObjects: {}
