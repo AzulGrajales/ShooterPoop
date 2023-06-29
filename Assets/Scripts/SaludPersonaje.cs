@@ -6,8 +6,7 @@ using UnityEngine.SceneManagement;
 public class SaludPersonaje : MonoBehaviour
 {
 
-    public float Salud = 100;
-    public float SaludMax = 100;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -19,11 +18,10 @@ public class SaludPersonaje : MonoBehaviour
     {
 
     }
-    public void RecibirDaño(float daño)
+    private void OnCollisionEnter(Collision collision)
     {
-        Salud -= daño;
 
-        if (Salud <= 0)
+        if (collision.gameObject.CompareTag("Enemy"))
         {
             SceneManager.LoadScene(3);
             Destroy(gameObject);
