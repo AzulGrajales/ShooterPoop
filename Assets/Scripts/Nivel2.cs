@@ -7,6 +7,6 @@ public class Nivel2 : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(4);
     }
 }
